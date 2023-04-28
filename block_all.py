@@ -1,3 +1,4 @@
+# pylint: disable=missing-module-docstring
 import tweepy
 
 consumer_key, consumer_secret = 'CONSUMER_KEY HERE', 'CONSUMER_SECRET_HERE'
