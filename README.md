@@ -1,10 +1,10 @@
 # twitter-blocker
 
-A tool designed to block mass amounts of users using the Twitter API. Provide a list `list_ordered.txt` of user ids you want to block in descending order of priority (current list is of users following @ValidLs and @MalesInDisguise, in descending date of latest activity).
+A tool designed to block mass amounts of users using the Twitter API. Provide a list `list_ordered.txt` of user ids you want to block in descending order of priority.
 
 **NOTE:** Make sure you keep up to date! Pull the latest changes for `list_ordered.txt`, as I will try to push updates on accounts that should be blocked.
 
-## How to use:
+## How to use
 
 For the sake of allowing as many people as possible to use this tool, I will be writing in-depth instructions on how to get this tool to work. If you are more experienced of a developer there is a tl;dr at the end. Also, if there is a discrepancy in the instructions, please notify me or even send a PR for corrections.
 
@@ -23,3 +23,21 @@ For the sake of allowing as many people as possible to use this tool, I will be 
 6. **Run block_all.py.** Last step! In your python environment, run `python block_all.py`. This will block EVERY user in the `list_ordered.txt` file, and save updates when an unexpected error occurs. From now on, this is the **ONLY** step you need to do once you have gotten steps 1-5 have been successfully completed. Be sure to check for updates with `list_ordered.txt`, as I will try to push updates on accounts that should be blocked.
 
 **TL;DR:** Acquire Twitter Dev account, obtain keys for Twitter App, paste keys into block script, setup Python environment, run script, and enjoy!
+
+## Currently Blocked Users
+
+To generate this block list, I scraped these account's followers:
+
+- @ValidLs
+- @MalesInDisguise
+- @NsPostingFs
+- @WokelyCorrect
+- @troonjacks
+- @Thewokeexposed
+- @GBT_Posting
+- @TransphobicTf2
+- @WokeParentLs
+- @FloridasWs
+- @PostingTransLs_
+
+Some are more obvious than others, but all of them follow the same pattern of being hateful toward minority groups, especially those in the LGBTQ+ community. These are some of the more extreme "gimmick" accounts I could find in this context. In almost every case of a user following these accounts, it can be very safe to assume that they are have the same viewpoints! The list itself is categorized by follower count, blocking the largest accounts first.
